@@ -19,11 +19,13 @@ current_user=$(whoami)
 
 #サービス化
 #service_file="$home_directory/Palworld-setup/files/palworld-server.service"
+
 echo "Fileの書き換え"
 sed -i "s/<user-name>/$current_user/g" "$home_directory/Palworld-setup/files/palworld-server.service"
 sed -i "s/<user-name>/$current_user/g" "$home_directory/Palworld-setup/files/PalServer"
 
 echo "Fileのコピー"
+
 sudo cp ~/Palworld-setup/files/palworld-server.service /etc/systemd/system/
 sudo cp ~/Palworld-setup/files/palworld-server.PalServer /etc/cron.d/
 
