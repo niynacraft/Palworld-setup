@@ -1,5 +1,4 @@
 home_directory=~
-echo $home_directory
 current_user=$(whoami)
 
 #mkdir ~/script
@@ -10,5 +9,6 @@ current_user=$(whoami)
 
 service_file="$home_directory/Palworld-setup/script/palworld-server.service"
 sed -i "s/<user-name>/$current_user/g" $service_file
-
 cat ~/Palworld-setup/script/palworld-server.service
+
+sudo cp ~/Palworld-setup/script/palworld-server.service /etc/systemd/system/
