@@ -1,0 +1,3 @@
+#2
+
+*/1 * * * * <user-name> ~/script/backup.sh
