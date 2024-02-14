@@ -1,4 +1,0 @@
-systemctl stop pve-cluster
-systemctl stop corosync
-pmxcfs -l
-systemctl start pve-cluster
