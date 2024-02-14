@@ -32,3 +32,4 @@ sudo cp ~/Palworld-setup/files/PalServer /etc/cron.d/
 sudo systemctl daemon-reload
 sudo systemctl enable palworld-server.service
 sudo systemctl start palworld-server.service
+sudo systemctl status palworld-server.service
