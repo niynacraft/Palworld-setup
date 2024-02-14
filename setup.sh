@@ -27,7 +27,7 @@ sed -i "s/<user-name>/$current_user/g" "$home_directory/Palworld-setup/files/Pal
 echo "Fileのコピー"
 
 sudo cp ~/Palworld-setup/files/palworld-server.service /etc/systemd/system/
-sudo cp ~/Palworld-setup/files/palworld-server.PalServer /etc/cron.d/
+sudo cp ~/Palworld-setup/files/PalServer /etc/cron.d/
 
 sudo systemctl daemon-reload
 sudo systemctl enable palworld-server.service
